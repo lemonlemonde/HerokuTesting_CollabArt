@@ -13,6 +13,14 @@
 
   <build>
 
+    <dependencies>
+      <dependency>
+        <groupId>org.json</groupId>
+        <artifactId>json</artifactId>
+        <version>20180130</version>
+      </dependency>
+    </dependencies>
+
     <!-- ahhhhh resource for build? -->
     <resources>
       <resource>
@@ -83,7 +91,7 @@
           <descriptorRefs>
             <descriptorRef>jar-with-dependencies</descriptorRef>
           </descriptorRefs>
-          <finalName>helloworld</finalName>
+          <finalName>HerokuTesting_CollabArt</finalName>
         </configuration>
       </plugin>
 
