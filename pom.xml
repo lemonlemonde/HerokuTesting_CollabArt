@@ -14,7 +14,7 @@
   <dependencies>
 
     <dependency>
-      <groupId>org.json</groupId>
+      <groupId>org.json.simple</groupId>
       <artifactId>json</artifactId>
       <version>20180130</version>
     </dependency>
@@ -37,6 +37,12 @@
         <version>3.1.0</version> 
         <scope>provided</scope> 
         <!-- //use provided if you are deploying war in a container -->
+    </dependency>
+
+    <dependency>
+      <groupId>javax</groupId>
+      <artifactId>javaee-api</artifactId>
+      <version>7.0</version>
     </dependency>
 
 
