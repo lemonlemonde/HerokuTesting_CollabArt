@@ -19,11 +19,11 @@
       <version>20180130</version>
     </dependency>
 
-    <!-- <dependency>
+    <dependency>
       <groupId>javax.servlet</groupId>
       <artifactId>jstl</artifactId>
       <version>1.2</version>
-    </dependency> -->
+    </dependency>
 
     <dependency>
       <groupId>mysql</groupId>
