@@ -1,0 +1,82 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  
+  <groupId>HerokuTesting_CollabArt</groupId>
+  <artifactId>HerokuTesting_CollabArt</artifactId>
+  <version>1.0.0</version>
+  <packaging>war</packaging>
+
+  <build>
+
+    <!-- ahhhhh resource for build? -->
+    <resources>
+      <resource>
+        <directory>src/main/webapp</directory>
+      </resource>
+      <resource>
+        <directory>src/main/java</directory>
+      </resource>
+    </resources>
+
+    <plugins>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-dependency-plugin</artifactId>
+        <executions>
+            <execution>
+                <phase>package</phase>
+                <goals><goal>copy</goal></goals>
+                <configuration>
+                    <artifactItems>
+                        <artifactItem>
+                            <groupId>com.heroku</groupId>
+                            <artifactId>webapp-runner</artifactId>
+                            <version>9.0.52.1</version>
+                            <destFileName>webapp-runner.jar</destFileName>
+                        </artifactItem>
+                    </artifactItems>
+                </configuration>
+            </execution>
+        </executions>
+      </plugin>
+
+      <!-- <plugin>            
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-war-plugin</artifactId>
+        <configuration>
+          <webXml>src\main\webapp\WEB-INF\web.xml</webXml>        
+        </configuration>
+      </plugin> -->
+
+      <plugin>
+        <groupId>com.heroku.sdk</groupId>
+        <artifactId>heroku-maven-plugin</artifactId>
+        <version>3.0.3</version>
+      </plugin>
+
+      <!-- <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <version>3.0.2</version>
+        <configuration>
+            <appName>HerokuTesting_CollabArt</appName>
+            <processTypes>
+              <web>java $JAVA_OPTS -cp target/classes:target/dependency/* Main</web>
+            </processTypes>
+        </configuration>
+
+      </plugin> -->
+
+      <plugin>
+          <artifactId>maven-war-plugin</artifactId>
+          <version>2.4</version>
+          <configuration>
+              <failOnMissingWebXml>false</failOnMissingWebXml>
+          </configuration>
+      </plugin>
+
+    </plugins>
+  </build>
+  
+</project>
