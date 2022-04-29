@@ -27,6 +27,20 @@
 				<version>1.7</version>
 				<executions>
 					<execution>
+            <id>add-source</id>
+            <phase>generate-sources</phase>
+            <goals>
+                <goal>add-source</goal>
+            </goals>
+            <configuration>
+                <sources>
+                    <source>CollabArt/src/main/webapp/</source>
+                </sources>
+                <sources>
+                    <source>CollabArt/src/main/java/</source>
+                </sources>
+            </configuration>
+
 						<id>add-resource</id>
 						<phase>generate-resources</phase>
 						<goals>
@@ -35,10 +49,10 @@
 						<configuration>
 							<resources>
 								<resource>
-									<directory>CollabArt/src/main/webapp/</directory>
+									<directory>CollabArt/src/main/webapp/images/</directory>
 								</resource>
 								<resource>
-									<directory>CollabArt/src/main/java/</directory>
+									<directory>CollabArt/src/main/java/images/</directory>
 								</resource>
 							</resources>
 						</configuration>
