@@ -59,7 +59,7 @@
 								</resource>
 							</resources>
 						</configuration>
-          </execution
+          </execution>
 				</executions>
       </plugin>
 
