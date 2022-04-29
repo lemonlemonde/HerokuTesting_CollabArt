@@ -6,15 +6,9 @@
   <version>1.0.0</version>
   <packaging>war</packaging>
 
-  <!-- Using to change sourceDirectory? -->
-  <properties>
-      <src.dir>src/main/webapp</src.dir>
-  </properties>
-  
-
   <build>
-    
-      <sourceDirectory>${src.dir}</sourceDirectory>
+    <sourceDirectory>src/main/webapp</sourceDirectory>
+
     <plugins>
 
       <plugin>
