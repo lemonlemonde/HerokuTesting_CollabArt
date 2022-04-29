@@ -14,7 +14,7 @@
         <directory>CollabArt/src/main/webapp</directory>
       </resource>
       <resource>
-        <directory>CollabArt/src/main/java</directory>
+        <directory>CollabArt/src/main/java/objects</directory>
       </resource>
     </resources>
 
