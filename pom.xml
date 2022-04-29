@@ -35,16 +35,10 @@
 						<configuration>
 							<resources>
 								<resource>
-									<directory>src/main/app/</directory>
+									<directory>src/main/webapp/</directory>
 								</resource>
 								<resource>
-									<directory>src/main/api/</directory>
-								</resource>
-								<resource>
-									<directory>src/main/api/java/</directory>
-								</resource>
-								<resource>
-									<directory>mappings/</directory>
+									<directory>src/main/java/</directory>
 								</resource>
 							</resources>
 						</configuration>
